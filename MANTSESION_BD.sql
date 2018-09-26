@@ -1,0 +1,23 @@
+
+/* DROP DATABASE MANTSESION */
+CREATE DATABASE MANTSESION
+GO
+USE MANTSESION
+GO
+
+CREATE TABLE USUARIO
+( 
+	CODIGO              integer identity(1,1)  NOT NULL ,
+	NOMBRE              varchar(50)  NULL ,
+	CONTRAS              varchar(50)  NULL ,
+	TIPO              varchar(1)  NULL ,
+	ESTADO              varchar(1)  NULL ,
+	 PRIMARY KEY (CODIGO ASC)
+)
+GO
+
+INSERT INTO USUARIO VALUES('ADMIN','ADMIN','A','A')
+INSERT INTO USUARIO VALUES('USUARIO','USUARIO','U','A')
+GO
+
+SELECT*FROM USUARIO
